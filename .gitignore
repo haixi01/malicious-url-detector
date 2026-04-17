@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Data / caches
+*.csv
+*.log
+.cache/
+
+# NOTE: rf_model.pkl is intentionally NOT ignored — the Streamlit app needs it
+# in the repo for deployment. If you prefer to keep it out of git (e.g. it's
+# too large for GitHub), uncomment the next line and host the model artifact
+# elsewhere (GitHub Releases, Cloud Storage) and download it on startup.
+# rf_model.pkl
