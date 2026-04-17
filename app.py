@@ -19,7 +19,7 @@ from feature_extractor import (
     features_to_frame,
 )
 
-MODEL_PATH = Path(__file__).parent / "models" / "rf_model_compressed.pkl"
+MODEL_PATH = Path(__file__).parent / "models" / "rf_model.pkl"
 
 # Edit these to change the quick-fill demo buttons.
 DEMO_URLS = [
