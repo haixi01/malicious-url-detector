@@ -8,7 +8,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # App code + trained model.
 # NOTE: build will fail if rf_model.pkl is missing — put it here before `docker build`.
-COPY app.py feature_extractor.py rf_model.pkl ./
+COPY app.py feature_extractor.py ./
+COPY models/ ./models/
 
 # Streamlit's default port. Cloud Run overrides $PORT at runtime (usually 8080).
 ENV PORT=8501
